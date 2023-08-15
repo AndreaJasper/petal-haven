@@ -2,6 +2,8 @@
     --cream: #F2EFE3;
 }
 
+/* BASE STYLES */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,7 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Crimson Text', serif;
 }
 
 h1 {
@@ -27,9 +29,23 @@ h3 {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
     line-height: 1.6;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 2rem; */
+}
+
+.hero-section, .about-section, .services-section, .product-section {
+    box-shadow: 0px 2px 0px 0px rgb(219,199,177, .1);
+}
+
+/* HEADER */
 
 header {
     background-color: #333;
@@ -85,25 +101,22 @@ header {
     display: block;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
+/* HERO */
 
 .hero-section {
     color: #000;
     padding: 6rem 0;
 }
 
-.hero-banner, .about-section {
+.hero-section, .about-section {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .hero-content {
-    max-width: 600px;
-    padding-right: 20px;
+    width: 50%;
+    padding-right: 39px;
 }
 
 .hero-title {
@@ -112,22 +125,19 @@ header {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 .hero-img {
-    width: 580px;
+    width: 50%;
 }
+
+/* ABOUT **/
 
 .about-content {
-    width: 790px;
-    padding-right: 20px;
-    margin: auto 0;
-}
-
-.about-content p {
-    padding-right: 60px;
+    width: 65%;
+    padding-right: 80px;
 }
 
 .title {
@@ -135,7 +145,13 @@ header {
 }
 
 .about-img {
-    width: 290px;
+    width: 35%;
+}
+
+/* CALLS TO ACTION */
+
+.services-section .title {
+    text-align: center;
 }
 
 .cta-section {
@@ -162,6 +178,8 @@ header {
     margin-bottom: 1.5rem;
 }
 
+/* PRODUCTS */
+
 .product-section {
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +203,8 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* FOOTER */
+
 footer {
     background-color: #333;
     color: #fff;
@@ -195,7 +215,8 @@ footer {
     width: 100%;
 }
 
-/* Responsive Styles */
+/* RESPONSIVE STYLES */
+
 @media screen and (max-width: 768px) {
     header {
         padding: 0.5rem;
@@ -205,7 +226,14 @@ footer {
         padding: 1rem;
     }
 
+    .hero-section, .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     footer {
         padding: 0.5rem;
     }
+
 }
