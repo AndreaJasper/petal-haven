@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petal Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <p>Petal <br/>Haven</p>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">Terms & Conditions</a>
+                        <a href="returns.html">Returns</a>
+                    </div>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="product-details">
+                <div class="product-image">
+                    <img src="imgs/tangerine-tango.jpg" alt="bouquet of orange roses">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Tangerine Tango Cluster</h2>
+                    <p class="product-price">$39.99</p>
+                    <p class="product-description">Elegant bouquet of vibrant orange roses to brighten any occasion.</p>
+                    <div class="product-quantity">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    </div>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Petal Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

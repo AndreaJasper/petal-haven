@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petal Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <p>Petal <br/>Haven</p>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <div class="dropdown-content">
+                        <a href="terms.html">Terms & Conditions</a>
+                        <a href="returns.html">Returns</a>
+                    </div>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <div class="page-header">
+                    <h2 class="title">Contact Us</h2>
+                    <p class="page-description">We'd love to hear from you! Reach out to us using the contact details below or fill out the form.</p>
+                </div>
+                <div class="contact-page">
+                    <div class="contact-page-details">
+                        <h2 class="section-title">Contact Details</h2>
+                        <div class="contact-info">
+                            <div class="padding-y">
+                                <p><b>Address:</b></p>
+                                <p>123 Fake Address St, Central City, State, 12345</p>
+                            </div>
+                            <div class="padding-y">
+                                <p><b>Email:</b></p>
+                                <p>fake_email@fakeprovider.com</p>
+                            </div>
+                            <div class="padding-y">
+                                <p><b>Phone:</b></p>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h2 class="section-title">Contact Us</h2>
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <button type="submit" class="button">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Petal Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
