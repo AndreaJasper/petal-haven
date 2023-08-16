@@ -582,6 +582,10 @@ footer {
         height: 300px;
     }
 
+    .page-header {
+        text-align: left;
+    }
+
     .contact-details {
         justify-content: center;
         align-items: center;
