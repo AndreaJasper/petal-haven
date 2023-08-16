@@ -85,6 +85,20 @@ header {
     padding: 0 1rem;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main);
+    margin: 2px 0;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -333,6 +347,14 @@ header {
 
 /* FOOTER */
 
+.policies a {
+    color: #fff;
+}
+
+.policies a:hover {
+    color: var(--tan);
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -426,6 +448,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .contact-page-details {
@@ -482,6 +505,37 @@ footer {
 @media screen and (max-width: 768px) {
     header {
         padding: 0.5rem;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--tan);
+        padding: 1rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
     }
 
     .container {
@@ -496,6 +550,10 @@ footer {
     .hero-content, .about-content {
         width: 100%;
         padding-right: 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
     }
 
     .hero-img, .about-img {
@@ -549,5 +607,9 @@ footer {
 
     .contact-details, .contact-form {
         flex-basis: 100%;
+    }
+
+    footer .logo {
+        justify-content: center;
     }
 }
